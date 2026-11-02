@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie - Projekt Trzeciej Tabeli</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        th, td {
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            text-align: center;
+            font-size: 16px;
+        }
+        /* Style dla nagłówków wierszy i kolumn (jasnoniebieskie tło) */
+        th, tr td:first-child {
+            background-color: #e6f2ff;
+            font-weight: bold;
+            color: #004085;
+        }
+        /* Specjalny styl dla nagłówka w lewym górnym rogu */
+        tr:first-child th:first-child {
+            background-color: #d1ecf1;
+        }
+        /* Styl dla scalonego prostokąta z inicjałami (jasnozielone tło) */
+        .scalone-inicjaly {
+            background-color: #d4edda;
+            color: #155724;
+            font-weight: bold;
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Trzecia Tabela: Inicjały TC</h2>
+
+    <table>
+        <!-- Wiersz 1: Numery kolumn -->
+        <tr>
+            <th></th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+        </tr>
+        
+        <!-- Wiersz 2 -->
+        <tr>
+            <td>2</td>
+            <td>a</td>
+            <td>b</td>
+            <!-- Komórka scalona: 3 kolumny w prawo (4,5,6) i 4 wiersze w dół (2,3,4,5) -->
+            <td colspan="3" rowspan="4" class="scalone-inicjaly">TC</td>
+        </tr>
+        
+        <!-- Wiersz 3 -->
+        <tr>
+            <td>3</td>
+            <td>f</td>
+            <td>g</td>
+            <!-- Kolumny 4, 5, 6 są zajęte przez scalenie -->
+        </tr>
+        
+        <!-- Wiersz 4 -->
+        <tr>
+            <td>4</td>
+            <td>k</td>
+            <td>l</td>
+            <!-- Kolumny 4, 5, 6 są zajęte przez scalenie -->
+        </tr>
+        
+        <!-- Wiersz 5 -->
+        <tr>
+            <td>5</td>
+            <td>p</td>
+            <td>q</td>
+            <!-- Kolumny 4, 5, 6 są zajęte przez scalenie -->
+        </tr>
+        
+        <!-- Wiersz 6 -->
+        <tr>
+            <td>6</td>
+            <td>u</td>
+            <td>v</td>
+            <td>w</td>
+            <td>y</td>
+            <td>z</td>
+        </tr>
+    </table>
+
+</body>
+</htm
+  l>
