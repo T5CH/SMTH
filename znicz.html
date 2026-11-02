@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pamięć i Zaduma</title>
+    <style>
+        /* Reset i podstawowe style tła */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: radial-gradient(circle, #1a1105 0%, #070502 100%);
+            color: #e0d5c1;
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Kontener główny kompozycji */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            max-width: 600px;
+        }
+
+        /* Tekst zadumy */
+        .quote {
+            font-style: italic;
+            font-size: 1.5rem;
+            line-height: 1.6;
+            letter-spacing: 1px;
+            text-shadow: 0 0 10px rgba(212, 143, 56, 0.3);
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        /* Konstrukcja znicza */
+        .candle-container {
+            position: relative;
+            width: 160px;
+            height: 240px;
+            margin-top: 20px;
+        }
+
+        /* Animowany płomień */
+        .flame {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 35px;
+            height: 35px;
+            background: radial-gradient(circle at 50% 80%, #ffffff 0%, #ffdf6d 30%, #ff8000 60%, transparent 100%);
+            border-radius: 50% 50% 20% 50%;
+            transform-origin: 50% 80%;
+            animation: flicker 0.15s infinite alternate, sway 3s infinite ease-in-out;
+            filter: blur(1px);
+            box-shadow: 0 0 40px 20px rgba(255, 128, 0, 0.4);
+        }
+
+        /* Knot */
+        .wick {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 15px;
+            background: #2b1d0c;
+            border-radius: 2px;
+        }
+
+        /* Szkło znicza */
+        .glass {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 140px;
+            background: linear-gradient(135deg, rgba(230, 92, 0, 0.3) 0%, rgba(139, 45, 0, 0.2) 60%, rgba(50, 10, 0, 0.5) 100%);
+            border: 2px solid rgba(212, 143, 56, 0.3);
+            border-radius: 20px 20px 40px 40px;
+            box-shadow: inset 0 0 20px rgba(255, 140, 0, 0.3), 0 10px 30px rgba(0,0,0,0.7);
+            backdrop-filter: blur(2px);
+        }
+
+        /* Podstawa i pokrywka (detale znicza) */
+        .glass::before {
+            content: '';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 12px;
+            background: #3a2512;
+            border-radius: 5px 5px 0 0;
+            border: 1px solid #52351a;
+        }
+
+        .glass::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 85px;
+            height: 12px;
+            background: #3a2512;
+            border-radius: 0 0 5px 5px;
+            border: 1px solid #52351a;
+        }
+
+        /* Stylowy link nawigacyjny */
+        .nav-link {
+            color: #aa8855;
+            text-decoration: none;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-bottom: 1px dashed #aa8855;
+            padding-bottom: 4px;
+            transition: all 0.4s ease;
+            margin-top: 20px;
+        }
+
+        .nav-link:hover {
+            color: #ffbc6d;
+            border-bottom: 1px solid #ffbc6d;
+            text-shadow: 0 0 8px rgba(255, 188, 109, 0.6);
+        }
+
+        /* Animacje CSS */
+        @keyframes flicker {
+            0% { transform: translateX(-50%) rotate(-1deg) scaleX(0.95); }
+            100% { transform: translateX(-50%) rotate(1deg) scaleX(1.05); }
+        }
+
+        @keyframes sway {
+            0%, 100% { transform: translateX(-50%) min-height: 35px; }
+            50% { transform: translateX(-52%) rotate(-3deg) height: 38px; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Napis związany z pamięcią -->
+        <p class="quote">
+            „Czas ucieka, wieczność czeka... <br>
+            Tym, którzy odeszli, lecz na zawsze pozostaną w naszych sercach.”
+        </p>
+
+        <!-- Kompozycja znicza -->
+        <div class="candle-container">
+            <div class="flame"></div>
+            <div class="wick"></div>
+            <div class="glass"></div>
+        </div>
+
+        <!-- Hiperłącze dopasowane do projektu -->
+        
+    </div>
+
+</body>
+</html>
