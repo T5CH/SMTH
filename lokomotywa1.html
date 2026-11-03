@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokomotywa</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+        }
+
+        header {
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            color: #002366;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .main-container {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: stretch;
+            padding: 20px 40px;
+            gap: 40px;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .column {
+            flex: 1;
+            padding: 25px;
+            font-size: 14px;
+            line-height: 1.5;
+            font-weight: bold;
+            color: #000000;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left-column {
+            background-color: #40E0D0; /* Turquoise */
+            border: 5px solid #20B2AA;
+        }
+
+        .center-column {
+            background-color: #FFFF54; /* Yellow */
+            border: 5px solid #9ACD32;
+            flex: 1.5; /* Slightly wider as in the layout */
+        }
+
+        .right-column {
+            background-color: #FA8072; /* Salmon / Light Red */
+            border: 5px solid #FF4500;
+        }
+
+        .center-column p, .left-column p, .right-column p {
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        .button-bar {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            color: #000000;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .btn-left {
+            background-color: #8B1E03; /* Dark brown-red */
+        }
+
+        .btn-right {
+            background-color: #2E8B57; /* Sea green */
+        }
+
+        footer {
+            background-color: #7B68EE; /* Medium slate blue */
+            color: #000000;
+            font-weight: bold;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            margin-top: auto;
+            border-top: 2px solid #6A5ACD;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Lokomotywa</h1>
+    </header>
+
+    <div class="main-container">
+        <!-- Lewa kolumna -->
+        <div class="column left-column">
+            <p>Stoi na stacji lokomotywa, Ciężka, ogromna i pot z niej spływa: Tłusta oliwa. Stoi i sapie, dyszy i dmucha, Żar z rozgrzanego jej brzucha bucha: Buch - jak gorąco! Uch - jak gorąco! Puff - jak gorąco! Uff - jak gorąco! Już ledwo sapie, już ledwo zipie, A jeszcze palacz węgiel w nią sypie.</p>
+        </div>
+
+        <!-- Środkowa kolumna -->
+        <div class="column center-column">
+            <p>Wagony do niej podoczepiali Wielkie i ciężkie, z żelaza, stali, I pełno ludzi w każdym wagonie, A w jednym krowy, a w drugim konie, A w trzecim siedzą same grubasy, Siedzą i jedzą tłuste kiełbasy, A czwarty wagon pełen bananów, A w piątym stoi sześć fortepianów, W szóstym armata - o! jaka wielka! Pod każdym kołem żelazna belka! W siódmym dębowe stoły i szafy, W ósmym słoń, niedźwiedź i dwie żyrafy, W dziewiątym - same tuczone świnie, W dziesiątym - kufry, paki i skrzynie. A tych wagonów jest ze czterdzieści, Sam nie wiem, co się w nich jeszcze mieści. Lecz choćby przyszło tysiąc atletów I każdy zjadłby tysiąc kotletów, I każdy nie wiem jak się wytężał, To nie udźwigną, taki to ciężar. Nagle - gwizd! Nagle - świst! Para - buch! Koła - w ruch! Najpierw - powoli - jak żółw – ociężała, Ruszyła - maszyna - po szynach - ospale, Szarpnęła wagony i ciągnie z mozołem, I kręci się, kręci się koło za kołem, I biegu przyspiesza, i gna coraz prędzej, I dudni, i stuka, łomoce i pędzi, A dokąd? A dokąd? A dokąd? Na wprost! Po torze, po torze, po torze, przez most, Przez góry, przez tunel, przez pola, przez las, I spieszy się, spieszy, by zdążyć na czas, Do taktu turkoce i puka, i stuka to: Tak to to, tak to to, tak to to, tak to to. Gładko tak, lekko tak toczy się w dal, Jak gdyby to była piłeczka, nie stal, Nie ciężka maszyna, zziajana, zdyszana, Lecz fraszka, igraszka, zabawka blaszana.</p>
+        </div>
+
+        <!-- Prawa kolumna -->
+        <div class="column right-column">
+            <p>A skądże to, jakże to, czemu tak gna? A co to to, co to to, kto to to tak pcha, Że pędzi, że wali, że bucha buch, buch? To para gorąca wprawiła to w ruch, To para, co z kotła rurami do tłoków, A tłoki kołami ruszają z dwóch boków I gnają, i pchają, i pociąg się toczy, Bo para te tłoki wciąż tłoczy i tłoczy, I koła turkocą, i puka, i stuka to: Tak to to, tak to to, tak to to, tak to to!...</p>
+        </div>
+    </div>
+
+    <div class="button-bar">
+        <button class="btn btn-left">Lewy róg</button>
+        <button class="btn btn-right">Prawy róg</button>
+    </div>
+
+    <footer>
+        Stopka strony
+    </footer>
+
+</body>
+</html>
