@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miasta i herby</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+            background-color: #ffffff;
+        }
+        th, td {
+            border: 1px solid #777777;
+            padding: 15px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        td.city-name {
+            width: 30%;
+            font-size: 14px;
+        }
+        td.city-crest {
+            width: 70%;
+        }
+        svg {
+            display: block;
+            margin: 0 auto;
+            max-height: 140px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Miasta i herby</h1>
+
+    <table>
+        <tbody>
+            <!-- Miasto 1: Z oryginalnego zadania -->
+            <tr>
+                <td class="city-name">Kraków</td>
+                <td class="city-crest">
+                    <!-- Uproszczony wektor herbu Krakowa -->
+                    <svg viewBox="0 0 100 100" width="100">
+                        <path d="M10,20 Q10,80 50,95 Q90,80 90,20 Z" fill="#e74c3c"/>
+                        <rect x="30" y="50" width="40" height="35" fill="#7f8c8d" stroke="#333" stroke-width="2"/>
+                        <rect x="35" y="35" width="8" height="20" fill="#7f8c8d" stroke="#333" stroke-width="2"/>
+                        <rect x="46" y="30" width="8" height="25" fill="#7f8c8d" stroke="#333" stroke-width="2"/>
+                        <rect x="57" y="35" width="8" height="20" fill="#7f8c8d" stroke="#333" stroke-width="2"/>
+                        <rect x="44" y="65" width="12" height="20" fill="#fff"/>
+                        <path d="M35,20 C45,5 55,5 65,20 C55,25 45,25 35,20" fill="#f1c40f"/>
+                    </svg>
+                </td>
+            </tr>
+            <!-- Miasto 2: Miasto urodzenia -->
+            <tr>
+                <td class="city-name">Mikołów</td>
+                <td class="city-crest">
+                    <!-- Uproszczony wektor herbu Mikołowa -->
+                    <svg viewBox="0 0 100 100" width="100">
+                        <path d="M10,20 Q10,80 50,95 Q90,80 90,20 Z" fill="#2980b9"/>
+                        <path d="M50,25 C35,25 30,45 35,65 C40,80 50,85 50,85 C50,85 60,80 65,65 C70,45 65,25 50,25 Z" fill="#f1c40f"/>
+                        <rect x="42" y="40" width="16" height="30" fill="#fff" stroke="#333" stroke-width="1.5"/>
+                        <path d="M38,40 L50,28 L62,40 Z" fill="#e74c3c"/>
+                    </svg>
+                </td>
+            </tr>
+            <!-- Miasto 3: Miasto szkoły -->
+            <tr>
+                <td class="city-name">Katowice</td>
+                <td class="city-crest">
+                    <!-- Uproszczony wektor herbu Katowic -->
+                    <svg viewBox="0 0 100 100" width="100">
+                        <path d="M10,20 Q10,80 50,95 Q90,80 90,20 Z" fill="#f1c40f"/>
+                        <rect x="35" y="40" width="30" height="35" fill="#34495e"/>
+                        <path d="M25,40 L75,40 L50,20 Z" fill="#e74c3c"/>
+                        <circle cx="50" cy="55" r="8" fill="#95a5a6"/>
+                        <rect x="48" y="63" width="4" height="12" fill="#95a5a6"/>
+                    </svg>
+                </td>
+            </tr>
+            <!-- Miasto 4: Dodatkowe miasto dla unikalności (np. Tychy) -->
+            <tr>
+                <td class="city-name">Tychy</td>
+                <td class="city-crest">
+                    <!-- Uproszczony wektor herbu Tychów -->
+                    <svg viewBox="0 0 100 100" width="100">
+                        <path d="M10,20 Q10,80 50,95 Q90,80 90,20 Z" fill="#2980b9"/>
+                        <path d="M30,35 C30,35 35,65 50,65 C65,65 70,35 70,35 C70,35 65,45 50,45 C35,45 30,35 30,35 Z" fill="#f1c40f"/>
+                        <rect x="48" y="25" width="4" height="45" fill="#f1c40f"/>
+                    </svg>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</htm
+  l>
